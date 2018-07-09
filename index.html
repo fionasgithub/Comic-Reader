@@ -16,6 +16,28 @@
   h3.text-white{
     line-height: 48px;
   }
+
+  .navbar {
+    padding: 1rem;
+  }
+
+  .chapters {
+    margin-top:60px;
+  }
+  .chapters::before{
+    content: attr(text);
+    position: absolute;
+    color: rgba(0, 0, 0, 0.3);
+    top: -40px;
+    left: 0px;
+    height: 40px;
+    overflow: hidden;
+    background-color: #000000;
+    border: 10px solid #000000;
+    padding: 2px;
+    margin: -5px;
+    color: #ffffff;
+  }
 </style>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -28,42 +50,70 @@
     </div>
   </nav>
   <div class="container">
-    <div class="row my-5 justify-content-center">
-      <div class="col-5 p-0">
-        <img class="float-right" src="img/comic cover.png" style="width:60%; border:5px solid #000000">
+    <div class="row my-3 justify-content-center">
+      <div class="col-4 p-0">
+        <img class="float-right" src="img/comic cover.png" style="width:100%; border:5px solid #000000">
       </div>
       <div class="col-5">
         <div class="row">
           <div class="col-12 bg-primary ">
             <h3 class="text-white mb-0">MY HEXSCHOOL</h3>
           </div>
-          <div class="col-12">
-            <p>MY HEXSCHOOL</p>
-            <table class="table table-hover">
-              <tbody>
-                <tr>
-                  <th scope="row">Default</th>
-                  <td>Column content</td>
-                </tr>
-                <tr>
-                  <th scope="row">Default</th>
-                  <td>Column content</td>
-                </tr>
-                <tr>
-                  <th scope="row">Default</th>
-                  <td>Column content</td>
-                </tr>
-                <tr>
-                  <th scope="row">Default</th>
-                  <td>Column content</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="col-12 p-4">
+            <div class="row">
+              <div class="col-4">
+                <h5>Genres</h5>
+              </div>
+              <div class="col-8">
+                <p>Fusce/vehicula/dolor</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <h5>Author</h5>
+              </div>
+              <div class="col-8">
+                <p>Namae Shiranai</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <h5>Status</h5>
+              </div>
+              <div class="col-8">
+                <p>Ongoing</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <h5>Rate</h5>
+              </div>
+              <div class="col-8">
+                <p>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h5>Summary</h5>
+                <p>If your banker breaks, you snap; if your apothecary by mistake sends you poison in your pills, you die.</p>
+                <p>Therefore, I say, I saw that this situation of mine was the precise situation of every mortal that has this Siamese connexion
+                  with a plurality of other mortals.</p>
+              </div>
+            </div>
           </div>
-        <div class="col-12">
-
         </div>
-        </div>
+      </div>
+      <div class="col-9 p-4 chapters" text="All Chapters" style="border:5px solid #000000">
+        <h5 style="line-height:36px;">Chapter 1: The F2E Challenge Start!</h5>
+        <h5 style="line-height:36px;">Chapter 2: Todo List is Going Crazy!
+          <span class="text-white badge badge-success">new</span>
+        </h5>
       </div>
     </div>
   </div>
